@@ -1,0 +1,17 @@
+{
+  "name": "linter-pyflakes",
+  "linter-package": true,
+  "main": "./lib/init",
+  "version": "0.0.1",
+  "description": "Linter plugin for pyflakes",
+  "activationEvents": [
+    "linter-pyflakes:toggle"
+  ],
+  "repository": "https://github.com/jemerick/linter-pyflakes",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
