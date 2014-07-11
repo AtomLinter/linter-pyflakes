@@ -2,7 +2,7 @@
   "name": "linter-pyflakes",
   "linter-package": true,
   "main": "./lib/init",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Linter plugin for pyflakes",
   "activationEvents": [
     "linter-pyflakes:toggle"
@@ -12,6 +12,5 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
