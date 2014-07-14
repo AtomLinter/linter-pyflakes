@@ -18,7 +18,8 @@ class LinterPyflakes extends Linter
   # regex: ""/path/to/python/file.py:28: redefinition of unused 'models' from line 5"
   regex: ':(?<line>\\d+): (?<message>.*?)\n'
 
-  constructor: (editorView)->
+  constructor: (editor)->
+    super editor
     @executablePath = atom.config.get 'linter-pyflakes.pyflakesExecutablePath'
 
 module.exports = LinterPyflakes
