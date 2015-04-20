@@ -16,7 +16,7 @@ class LinterPyflakes extends Linter
 
   # A regex pattern used to extract information from the executable's output.
   # regex: ""/path/to/python/file.py:28: redefinition of unused 'models' from line 5"
-  regex: ':(?<line>\\d+): (?<message>.*?)\n'
+  regex: ':(?<line>\\d+): (?<message>.*?)[\r\n]+'
 
   constructor: (editor)->
     super editor
