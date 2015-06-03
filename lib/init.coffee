@@ -1,6 +1,8 @@
 module.exports =
-  configDefaults:
-    pyflakesExecutablePath: null
+  config:
+    pyflakesExecutablePath:
+      type: 'string'
+      default: ''
 
   activate: ->
     console.log 'activate linter-pyflakes'
