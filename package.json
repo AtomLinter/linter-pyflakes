@@ -2,7 +2,7 @@
   "name": "linter-pyflakes",
   "linter-package": true,
   "main": "./lib/init",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Linter plugin for pyflakes",
   "repository": "https://github.com/AtomLinter/linter-pyflakes",
   "license": "MIT",
