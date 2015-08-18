@@ -1,13 +1,21 @@
 {
   "name": "linter-pyflakes",
-  "linter-package": true,
   "main": "./lib/init",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Linter plugin for pyflakes",
   "repository": "https://github.com/AtomLinter/linter-pyflakes",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "atom-linter": "^1.0.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
 }
