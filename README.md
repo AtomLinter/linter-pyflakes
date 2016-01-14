@@ -45,8 +45,5 @@ Please note that modications should follow these coding guidelines:
 
 Thank you for helping out!
 
-## Changelog
-* **0.0.6** New linter API support
-
 ## Donation
 [![Share the love!](https://chewbacco-stuff.s3.amazonaws.com/donate.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KXUYS4ARNHCN8)
