@@ -3,9 +3,6 @@ module.exports =
     pyflakesExecutablePath:
       type: 'string'
       default: 'pyflakes'
-    convertAllErrorsToWarnings:
-      type: 'boolean'
-      default: true
 
   activate: ->
 
@@ -17,9 +14,6 @@ module.exports =
       lintOnFly: true
       lint: (textEditor)->
         filePath = textEditor.getPath()
-        msgtype = if atom.config.get(
-          'linter-pyflakes.convertAllErrorsToWarnings'
-        ) then 'Warning' else 'Error'
 
         return helpers.exec(atom.config.get(
           'linter-pyflakes.pyflakesExecutablePath'
@@ -30,7 +24,7 @@ module.exports =
           while (match = regex.exec(result)) isnt null
             line = parseInt(match[1]) or 0
             toReturn.push({
-              type: msgtype
+              type: 'Warning'
               text: match[2]
               filePath
               range: [[line - 1, 0], [line - 1, 1]]
