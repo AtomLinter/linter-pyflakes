@@ -35,7 +35,7 @@ You can configure linter-pyflakes by editing `~/.atom/config.cson`
 
 ```coffeescript
 "linter-pyflakes":
-  "pyflakesExecutablePath": null #scss-lint path. run 'which scss-lint' to find the path
+  "pyflakesExecutablePath": null #pyflakes path. run 'which pyflakes' to find the path
 ```
 
 [linter]: https://github.com/AtomLinter/Linter "Linter"
