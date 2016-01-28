@@ -1,23 +1,22 @@
 # linter-pyflakes
 
-This linter plugin for [Linter][] provides an interface to
-[pyflakes](https://launchpad.net/pyflakes). It will be used with python files.
+[![Build Status](https://img.shields.io/travis/AtomLinter/linter-pyflakes.svg)](https://travis-ci.org/AtomLinter/linter-pyflakes)
+[![Plugin installs!](https://img.shields.io/apm/dm/linter-pyflakes.svg)](https://atom.io/packages/linter-pyflakes)
+[![Package version!](https://img.shields.io/apm/v/linter-pyflakes.svg)](https://atom.io/packages/linter-pyflakes)
+[![Dependencies!](https://img.shields.io/david/AtomLinter/linter-pyflakes.svg)](https://david-dm.org/AtomLinter/linter-pyflakes)
+
+This package will lint the opened `.py` files in Atom through [pyflakes](https://launchpad.net/pyflakes).
+
+The [changelog](https://github.com/AtomLinter/linter-pyflakes/blob/master/CHANGELOG.md) lists the changes for each release.
 
 ## Installation
 
-Linter package must be installed in order to use this plugin. If Linter is not
-installed, please follow the instructions [here][linter].
+Before using this package, you must ensure that `pyflakes` is installed on your system. To install `pyflakes`, do the following:
 
-### pyflakes installation
+1. On Linux:
 
-Before using this plugin, you must ensure that `pyflakes` is installed on your
-system. To install `pyflakes`, do the following:
-
-1.  Install [pyflakes](https://launchpad.net/pyflakes) by typing the following
-    in a terminal:
-
-    ```ShellSession
-    pip install pyflakes
+    ```text
+    [sudo] pip install pyflakes
     ```
 
 Now you can proceed to install the linter-pyflakes plugin.
@@ -27,15 +26,3 @@ Now you can proceed to install the linter-pyflakes plugin.
 ```ShellSession
 apm install linter-pyflakes
 ```
-
-## Settings
-
-You can configure linter-pyflakes by editing `~/.atom/config.cson`
-(choose Open Your Config in Atom menu):
-
-```coffeescript
-"linter-pyflakes":
-  "pyflakesExecutablePath": null #pyflakes path. run 'which pyflakes' to find the path
-```
-
-[linter]: https://github.com/AtomLinter/Linter "Linter"
