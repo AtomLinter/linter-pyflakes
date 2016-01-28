@@ -43,6 +43,6 @@ module.exports =
                 text: match[2]
                 filePath
                 # make range the full line
-                range: helpers.rangeFromLineNumber(textEditor, line - 1, 0)
+                range: helpers.rangeFromLineNumber(textEditor, line - 1)
               })
           return toReturn
