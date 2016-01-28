@@ -14,7 +14,7 @@ module.exports =
       grammarScopes: ['source.python']
       scope: 'file'
       lintOnFly: true
-      lint: (textEditor)->
+      lint: (textEditor) ->
         filePath = textEditor.getPath()
 
         return helpers.exec(atom.config.get(
