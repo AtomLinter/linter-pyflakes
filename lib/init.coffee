@@ -41,6 +41,7 @@ module.exports =
                 type: 'Warning'
                 text: match[2]
                 filePath
-                range: [[line - 1, 0], [line - 1, 1]]
+                # make range the full line
+                range: helpers.rangeFromLineNumber(textEditor, line - 1, 0)
               })
           return toReturn
