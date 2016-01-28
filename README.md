@@ -15,7 +15,7 @@ Before using this package, you must ensure that `pyflakes` is installed on your 
 
 1. On Linux:
 
-    ```text
+    ```ShellSession
     [sudo] pip install pyflakes
     ```
 
