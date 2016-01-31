@@ -1,11 +1,51 @@
 # Change Log
 
-## [v0.1.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.1.0) (2016-01-14)
-[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.0.5...v0.1.0)
+## [v0.2.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.2.0)
+
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.1.1...v0.2.0)
+
+**Implemented enhancements:**
+
+- add dependency on linter [\#24](https://github.com/AtomLinter/linter-pyflakes/pull/24) ([dirk-thomas](https://github.com/dirk-thomas))
+- mark full line [\#23](https://github.com/AtomLinter/linter-pyflakes/pull/23) ([dirk-thomas](https://github.com/dirk-thomas))
 
 **Fixed bugs:**
 
+- syntax errors not highlighted [\#3](https://github.com/AtomLinter/linter-pyflakes/issues/3)
+
+**Closed issues:**
+
+- Implement specs [\#13](https://github.com/AtomLinter/linter-pyflakes/issues/13)
+
+**Merged pull requests:**
+
+- update readme [\#28](https://github.com/AtomLinter/linter-pyflakes/pull/28) ([dirk-thomas](https://github.com/dirk-thomas))
+- add .travis.yml [\#27](https://github.com/AtomLinter/linter-pyflakes/pull/27) ([dirk-thomas](https://github.com/dirk-thomas))
+- add coffeelint, fix style [\#26](https://github.com/AtomLinter/linter-pyflakes/pull/26) ([dirk-thomas](https://github.com/dirk-thomas))
+- add specs [\#25](https://github.com/AtomLinter/linter-pyflakes/pull/25) ([dirk-thomas](https://github.com/dirk-thomas))
+- atom-linter@4.3.4 untested ⚠️ [\#22](https://github.com/AtomLinter/linter-pyflakes/pull/22) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+## [v0.1.1](https://github.com/AtomLinter/linter-pyflakes/tree/v0.1.1) (2016-01-17)
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.1.0...v0.1.1)
+
+**Implemented enhancements:**
+
+- Generate a changelog [\#16](https://github.com/AtomLinter/linter-pyflakes/pull/16) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update the readme [\#15](https://github.com/AtomLinter/linter-pyflakes/pull/15) ([Arcanemagus](https://github.com/Arcanemagus))
+
+**Fixed bugs:**
+
+- Syntax errors cause pop-up modal [\#19](https://github.com/AtomLinter/linter-pyflakes/issues/19)
+- Change scss-linter to pyflakes in README.md [\#17](https://github.com/AtomLinter/linter-pyflakes/issues/17)
 - Upcoming linter changes [\#9](https://github.com/AtomLinter/linter-pyflakes/issues/9)
+- Fix \#17 - Change scss-lint copy to pyflakes [\#18](https://github.com/AtomLinter/linter-pyflakes/pull/18) ([mbeacom](https://github.com/mbeacom))
+
+**Merged pull requests:**
+
+- catch syntax error [\#20](https://github.com/AtomLinter/linter-pyflakes/pull/20) ([dirk-thomas](https://github.com/dirk-thomas))
+
+## [v0.1.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.1.0) (2016-01-14)
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.0.5...v0.1.0)
 
 **Implemented enhancements:**
 
