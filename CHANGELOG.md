@@ -1,6 +1,6 @@
 # Change Log
 
-## [v0.2.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.2.0)
+## [v0.2.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.2.0) (2016-01-31)
 
 [Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.1.1...v0.2.0)
 
