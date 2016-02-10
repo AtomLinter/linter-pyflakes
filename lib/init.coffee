@@ -1,3 +1,5 @@
+helpers = null
+
 module.exports =
   config:
     pyflakesExecutablePath:
@@ -5,10 +7,10 @@ module.exports =
       default: 'pyflakes'
 
   activate: ->
-    require('atom-package-deps').install()
+    require('atom-package-deps').install('linter-pyflakes')
 
   provideLinter: ->
-    helpers = require('atom-linter')
+    helpers ?= require('atom-linter')
     provider =
       name: 'pyflakes'
       grammarScopes: ['source.python']
