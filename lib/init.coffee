@@ -10,13 +10,13 @@ module.exports =
     require('atom-package-deps').install('linter-pyflakes')
 
   provideLinter: ->
-    helpers ?= require('atom-linter')
     provider =
       name: 'pyflakes'
       grammarScopes: ['source.python']
       scope: 'file'
       lintOnFly: true
       lint: (textEditor) ->
+        helpers ?= require('atom-linter')
         filePath = textEditor.getPath()
 
         return helpers.exec(atom.config.get(
