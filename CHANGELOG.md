@@ -1,13 +1,19 @@
 # Change Log
 
-## [v0.2.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.2.0) (2016-01-31)
-
-[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.1.1...v0.2.0)
+## [v0.2.1](https://github.com/AtomLinter/linter-pyflakes/tree/v0.2.1) (2016-02-10)
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.2.0...v0.2.1)
 
 **Implemented enhancements:**
 
-- add dependency on linter [\#24](https://github.com/AtomLinter/linter-pyflakes/pull/24) ([dirk-thomas](https://github.com/dirk-thomas))
-- mark full line [\#23](https://github.com/AtomLinter/linter-pyflakes/pull/23) ([dirk-thomas](https://github.com/dirk-thomas))
+- delay require call [\#31](https://github.com/AtomLinter/linter-pyflakes/pull/31) ([dirk-thomas](https://github.com/dirk-thomas))
+- improve startup time [\#30](https://github.com/AtomLinter/linter-pyflakes/pull/30) ([dirk-thomas](https://github.com/dirk-thomas))
+
+**Merged pull requests:**
+
+- update contributing to mention running tests [\#29](https://github.com/AtomLinter/linter-pyflakes/pull/29) ([dirk-thomas](https://github.com/dirk-thomas))
+
+## [v0.2.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.2.0) (2016-01-31)
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.1.1...v0.2.0)
 
 **Fixed bugs:**
 
@@ -23,6 +29,8 @@
 - add .travis.yml [\#27](https://github.com/AtomLinter/linter-pyflakes/pull/27) ([dirk-thomas](https://github.com/dirk-thomas))
 - add coffeelint, fix style [\#26](https://github.com/AtomLinter/linter-pyflakes/pull/26) ([dirk-thomas](https://github.com/dirk-thomas))
 - add specs [\#25](https://github.com/AtomLinter/linter-pyflakes/pull/25) ([dirk-thomas](https://github.com/dirk-thomas))
+- add dependency on linter [\#24](https://github.com/AtomLinter/linter-pyflakes/pull/24) ([dirk-thomas](https://github.com/dirk-thomas))
+- mark full line [\#23](https://github.com/AtomLinter/linter-pyflakes/pull/23) ([dirk-thomas](https://github.com/dirk-thomas))
 - atom-linter@4.3.4 untested ⚠️ [\#22](https://github.com/AtomLinter/linter-pyflakes/pull/22) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 
 ## [v0.1.1](https://github.com/AtomLinter/linter-pyflakes/tree/v0.1.1) (2016-01-17)
