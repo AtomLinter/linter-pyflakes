@@ -15,13 +15,13 @@ module.exports =
       grammarScopes: ['source.python']
       scope: 'file'
       lintOnFly: true
-      lint: (textEditor) ->
+      lint: (textEditor) =>
         helpers ?= require('atom-linter')
         filePath = textEditor.getPath()
 
         return helpers.exec(atom.config.get(
           'linter-pyflakes.pyflakesExecutablePath'
-        ), [], {stdin: textEditor.getText(), stream: 'both'}).then (result) ->
+        ), [], {stdin: textEditor.getText(), stream: 'both'}).then (result) =>
           toReturn = []
 
           if result.stderr
@@ -41,10 +41,20 @@ module.exports =
             while (match = regex.exec(result.stdout)) isnt null
               line = parseInt(match[1]) or 0
               toReturn.push({
-                type: 'Warning'
+                type: @getMessageType(match[2])
                 text: match[2]
                 filePath
                 # make range the full line
                 range: helpers.rangeFromLineNumber(textEditor, line - 1)
               })
           return toReturn
+
+  getMessageType: (line) ->
+    if (
+      line.indexOf('used') isnt -1 or
+      line.indexOf('redefines') isnt -1 or
+      line.indexOf('shadowed') isnt -1 or
+      line.indexOf('may be') isnt -1
+    )
+      return 'Warning'
+    return 'Error'
