@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.3.0) (2016-02-15)
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.2.1...v0.3.0)
+
+**Implemented enhancements:**
+
+- choose marker type based on pyflakes message [\#32](https://github.com/AtomLinter/linter-pyflakes/pull/32) ([dirk-thomas](https://github.com/dirk-thomas))
+
 ## [v0.2.1](https://github.com/AtomLinter/linter-pyflakes/tree/v0.2.1) (2016-02-10)
 [Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.2.0...v0.2.1)
 
