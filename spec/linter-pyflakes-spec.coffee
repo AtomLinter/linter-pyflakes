@@ -23,21 +23,15 @@ describe 'The pyflakes provider for Linter', ->
       return atom.workspace.open(__dirname + '/fixtures/invalid.py').then (editor) ->
         return lint(editor).then (messages) ->
           expect(messages.length).toEqual 2
-          expect(messages[0].range[0][0]).toEqual 0
-          expect(messages[0].range[0][1]).toEqual 0
-          expect(messages[0].range[1][0]).toEqual 0
-          expect(messages[0].range[1][1]).toEqual 9
-          expect(messages[1].range[0][0]).toEqual 4
-          expect(messages[1].range[0][1]).toEqual 4
-          expect(messages[1].range[1][0]).toEqual 4
-          expect(messages[1].range[1][1]).toEqual 22
+          expect(messages[0].range).toEqual [[0, 0], [0, 9]]
+          expect(messages[0].type).toEqual 'Warning'
+          expect(messages[1].range).toEqual [[4, 4], [4, 22]]
+          expect(messages[1].type).toEqual 'Error'
 
   it 'finds something wrong with invalid syntax', ->
     waitsForPromise ->
       return atom.workspace.open(__dirname + '/fixtures/invalid_syntax.py').then (editor) ->
         return lint(editor).then (messages) ->
           expect(messages.length).toEqual 1
-          expect(messages[0].range[0][0]).toEqual 0
-          expect(messages[0].range[0][1]).toEqual 7
-          expect(messages[0].range[1][0]).toEqual 0
-          expect(messages[0].range[1][1]).toEqual 7
+          expect(messages[0].range).toEqual [[0, 7], [0, 7]]
+          expect(messages[0].type).toEqual 'Error'
