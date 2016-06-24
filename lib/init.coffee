@@ -37,15 +37,24 @@ module.exports =
               })
 
           else
+            buffer = textEditor.getBuffer()
             regex = /<stdin>:(\d+):(.*)/g
             while (match = regex.exec(result.stdout)) isnt null
               line = parseInt(match[1]) or 0
+              lineText = buffer.lineForRow(line - 1)
               toReturn.push({
                 type: @getMessageType(match[2])
                 text: match[2]
                 filePath
                 # make range the full line
-                range: helpers.rangeFromLineNumber(textEditor, line - 1)
+                # except leading and trailing whitespaces
+                range: [
+                  [
+                    line - 1,
+                    lineText.length - lineText.replace(/^\s+/g, '').length],
+                  [
+                    line - 1,
+                    lineText.replace(/\s+$/g, '').length]]
               })
           return toReturn
 
