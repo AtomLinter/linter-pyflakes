@@ -1,6 +1,7 @@
 # linter-pyflakes
 
-[![Build Status](https://img.shields.io/travis/AtomLinter/linter-pyflakes.svg)](https://travis-ci.org/AtomLinter/linter-pyflakes)
+[![Build Status Travis](https://img.shields.io/travis/AtomLinter/linter-pyflakes.svg)](https://travis-ci.org/AtomLinter/linter-pyflakes)
+[![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/github/AtomLinter/linter-pyflakes?branch=master&svg=true)](https://ci.appveyor.com/project/Arcanemagus/linter-pyflakes)
 [![Plugin installs!](https://img.shields.io/apm/dm/linter-pyflakes.svg)](https://atom.io/packages/linter-pyflakes)
 [![Package version!](https://img.shields.io/apm/v/linter-pyflakes.svg)](https://atom.io/packages/linter-pyflakes)
 [![Dependencies!](https://img.shields.io/david/AtomLinter/linter-pyflakes.svg)](https://david-dm.org/AtomLinter/linter-pyflakes)
