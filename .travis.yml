@@ -1,3 +1,28 @@
+### Project specific config ###
+language: python
+
+os:
+  - linux
+
+env:
+  matrix:
+    - ATOM_CHANNEL=stable
+    - ATOM_CHANNEL=beta
+
+install:
+  - pip install pyflakes
+
+### Generic setup follows ###
+script:
+  - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
+  - chmod u+x build-package.sh
+  - ./build-package.sh
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
 branches:
   only:
     - master
@@ -5,33 +30,12 @@ branches:
 git:
   depth: 10
 
-matrix:
-  include:
-    - os: linux
-      language: python
-      env: ATOM_CHANNEL=stable
-    - os: linux
-      language: python
-      env: ATOM_CHANNEL=beta
-    - os: osx
-      language: generic
-      env: ATOM_CHANNEL=stable
-      before_install:
-        - brew update
-        - brew install python
-    - os: osx
-      language: generic
-      env: ATOM_CHANNEL=beta
-      before_install:
-        - brew update
-        - brew install python
+sudo: false
 
-install:
-  - pip install pyflakes
-
-script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
-
-notifications:
-  email:
-    on_success: never
-    on_failure: change
+addons:
+  apt:
+    packages:
+    - build-essential
+    - git
+    - libgnome-keyring-dev
+    - fakeroot
