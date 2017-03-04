@@ -1,5 +1,24 @@
 # Change Log
 
+## [v0.3.1](https://github.com/AtomLinter/linter-pyflakes/tree/v0.3.1) (2017-03-03)
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.3.0...v0.3.1)
+
+**Implemented enhancements:**
+
+- Rewrite in ES2017 [\#47](https://github.com/AtomLinter/linter-pyflakes/pull/47) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update CI Configuration [\#46](https://github.com/AtomLinter/linter-pyflakes/pull/46) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update atom-linter to the latest version 🚀 [\#45](https://github.com/AtomLinter/linter-pyflakes/pull/45) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update atom-linter to version 8.0.0 🚀 [\#42](https://github.com/AtomLinter/linter-pyflakes/pull/42) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update atom-linter to version 7.0.0 🚀 [\#41](https://github.com/AtomLinter/linter-pyflakes/pull/41) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- add AppVeyor badge [\#40](https://github.com/AtomLinter/linter-pyflakes/pull/40) ([dirk-thomas](https://github.com/dirk-thomas))
+- add appveyor.yml [\#39](https://github.com/AtomLinter/linter-pyflakes/pull/39) ([dirk-thomas](https://github.com/dirk-thomas))
+- Update atom-linter to version 5.0.1 🚀 [\#36](https://github.com/AtomLinter/linter-pyflakes/pull/36) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update atom-package-deps to version 4.0.1 🚀 [\#34](https://github.com/AtomLinter/linter-pyflakes/pull/34) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+**Fixed bugs:**
+
+- Rewrite in ES2017 [\#47](https://github.com/AtomLinter/linter-pyflakes/pull/47) ([Arcanemagus](https://github.com/Arcanemagus))
+
 ## [v0.3.0](https://github.com/AtomLinter/linter-pyflakes/tree/v0.3.0) (2016-02-15)
 [Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.2.1...v0.3.0)
 
