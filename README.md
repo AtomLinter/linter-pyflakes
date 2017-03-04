@@ -14,7 +14,7 @@ The [changelog](https://github.com/AtomLinter/linter-pyflakes/blob/master/CHANGE
 
 Before using this package, you must ensure that `pyflakes` is installed on your system. To install `pyflakes`, do the following:
 
-1. On Linux:
+1.  On Linux:
 
     ```ShellSession
     [sudo] pip install pyflakes
