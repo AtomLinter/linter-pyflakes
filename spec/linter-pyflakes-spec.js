@@ -35,19 +35,17 @@ describe('The pyflakes provider for Linter', () => {
         lint(editor).then((messages) => {
           expect(messages.length).toBe(2);
 
-          expect(messages[0].type).toBe('Warning');
           expect(messages[0].severity).toBe('warning');
           expect(messages[0].html).not.toBeDefined();
-          expect(messages[0].text).toBe("'os' imported but unused");
-          expect(messages[0].filePath).toBe(invalidPath);
-          expect(messages[0].range).toEqual([[0, 0], [0, 9]]);
+          expect(messages[0].excerpt).toBe("'os' imported but unused");
+          expect(messages[0].location.file).toBe(invalidPath);
+          expect(messages[0].location.position).toEqual([[0, 0], [0, 9]]);
 
-          expect(messages[1].type).toBe('Error');
           expect(messages[1].severity).toBe('error');
           expect(messages[1].html).not.toBeDefined();
-          expect(messages[1].text).toBe("undefined name 'hello_world'");
-          expect(messages[1].filePath).toBe(invalidPath);
-          expect(messages[1].range).toEqual([[4, 4], [4, 22]]);
+          expect(messages[1].excerpt).toBe("undefined name 'hello_world'");
+          expect(messages[1].location.file).toBe(invalidPath);
+          expect(messages[1].location.position).toEqual([[4, 4], [4, 22]]);
         }),
       ),
     ),
@@ -59,12 +57,11 @@ describe('The pyflakes provider for Linter', () => {
         lint(editor).then((messages) => {
           expect(messages.length).toBe(1);
 
-          expect(messages[0].type).toBe('Error');
           expect(messages[0].severity).toBe('error');
           expect(messages[0].html).not.toBeDefined();
-          expect(messages[0].text).toBe('invalid syntax');
-          expect(messages[0].filePath).toBe(syntaxPath);
-          expect(messages[0].range).toEqual([[0, 7], [0, 8]]);
+          expect(messages[0].excerpt).toBe('invalid syntax');
+          expect(messages[0].location.file).toBe(syntaxPath);
+          expect(messages[0].location.position).toEqual([[0, 7], [0, 8]]);
         }),
       ),
     ),
