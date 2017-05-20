@@ -4,6 +4,8 @@ language: python
 os:
   - linux
 
+dist: trusty
+
 env:
   matrix:
     - ATOM_CHANNEL=stable
