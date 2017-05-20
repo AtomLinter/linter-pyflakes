@@ -1,5 +1,13 @@
 # Change Log
 
+## [v0.3.2](https://github.com/AtomLinter/linter-pyflakes/tree/v0.3.2) (2017-05-20)
+[Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.3.1...v0.3.2)
+
+**Implemented enhancements:**
+
+- Update to Linter v2 [\#50](https://github.com/AtomLinter/linter-pyflakes/pull/50) ([dirk-thomas](https://github.com/dirk-thomas))
+- Update atom-linter to version 10.0.0 🚀 [\#48](https://github.com/AtomLinter/linter-pyflakes/pull/48) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
 ## [v0.3.1](https://github.com/AtomLinter/linter-pyflakes/tree/v0.3.1) (2017-03-03)
 [Full Changelog](https://github.com/AtomLinter/linter-pyflakes/compare/v0.3.0...v0.3.1)
 
