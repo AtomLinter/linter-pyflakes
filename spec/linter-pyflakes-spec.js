@@ -23,11 +23,7 @@ describe('The pyflakes provider for Linter', () => {
     waitsForPromise(() =>
       atom.workspace.open(validPath).then(editor =>
         lint(editor).then(messages =>
-          expect(messages.length).toBe(0),
-        ),
-      ),
-    ),
-  );
+          expect(messages.length).toBe(0)))));
 
   it('finds something wrong with invalid files', () =>
     waitsForPromise(() =>
@@ -46,10 +42,7 @@ describe('The pyflakes provider for Linter', () => {
           expect(messages[1].excerpt).toBe("undefined name 'hello_world'");
           expect(messages[1].location.file).toBe(invalidPath);
           expect(messages[1].location.position).toEqual([[4, 4], [4, 22]]);
-        }),
-      ),
-    ),
-  );
+        }))));
 
   it('finds something wrong with invalid syntax', () =>
     waitsForPromise(() =>
@@ -62,8 +55,5 @@ describe('The pyflakes provider for Linter', () => {
           expect(messages[0].excerpt).toBe('invalid syntax');
           expect(messages[0].location.file).toBe(syntaxPath);
           expect(messages[0].location.position).toEqual([[0, 7], [0, 8]]);
-        }),
-      ),
-    ),
-  );
+        }))));
 });
