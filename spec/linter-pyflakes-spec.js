@@ -1,7 +1,9 @@
 'use babel';
 
-// eslint-disable-next-line no-unused-vars
-import { it, fit, wait, beforeEach, afterEach } from 'jasmine-fix';
+import {
+  // eslint-disable-next-line no-unused-vars
+  it, fit, wait, beforeEach, afterEach,
+} from 'jasmine-fix';
 import { join } from 'path';
 
 const validPath = join(__dirname, 'fixtures', 'valid.py');
@@ -15,11 +17,13 @@ describe('The pyflakes provider for Linter', () => {
     await atom.packages.activatePackage('linter-pyflakes');
   });
 
-  it('should be in the packages list', () =>
-    expect(atom.packages.isPackageLoaded('linter-pyflakes')).toBe(true));
+  it('should be in the packages list', () => {
+    expect(atom.packages.isPackageLoaded('linter-pyflakes')).toBe(true);
+  });
 
-  it('should be an active package', () =>
-    expect(atom.packages.isPackageActive('linter-pyflakes')).toBe(true));
+  it('should be an active package', () => {
+    expect(atom.packages.isPackageActive('linter-pyflakes')).toBe(true);
+  });
 
   it('finds nothing wrong with valid files', async () => {
     const editor = await atom.workspace.open(validPath);
