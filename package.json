@@ -15,6 +15,16 @@
       "title": "Executable Path",
       "description": "Full path to `pyflakes`, eg. output of `which pyflakes`",
       "default": "pyflakes"
+    },
+    "lintTrigger": {
+      "type": "string",
+      "title": "trigger of lint",
+      "description": "default 'lint as type'",
+      "default": "LintAsYouType",
+      "enum": [
+        {"value": "LintOnFileSave", "description": "Lint on file save"}
+        {"value": "LintAsYouType", "description": "Lint as you type"}
+      ]
     }
   },
   "dependencies": {
