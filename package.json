@@ -17,14 +17,9 @@
       "default": "pyflakes"
     },
     "lintTrigger": {
-      "type": "string",
+      "type": "boolean",
       "title": "trigger of lint",
-      "description": "default 'lint as type'",
-      "default": "LintAsYouType",
-      "enum": [
-        {"value": "LintOnFileSave", "description": "Lint on file save"}
-        {"value": "LintAsYouType", "description": "Lint as you type"}
-      ]
+      "default": true,
     }
   },
   "dependencies": {
